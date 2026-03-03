@@ -156,6 +156,45 @@
   gap: 1rem;
 }
 
+/* faq section */
+.faq {
+  position: relative;
+  width: 100%;
+  background-color: var(--bg);
+  padding: 8rem 0;
+}
+
+.faq .container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.faq-header {
+  text-align: center;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.faq-item {
+  padding: 1.25rem 1.5rem;
+  border-left: 2px solid var(--fg);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.faq-item .type-mono {
+  opacity: 0.8;
+}
+
 .clients {
   position: relative;
   width: 100%;

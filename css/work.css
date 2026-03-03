@@ -91,6 +91,22 @@
   text-align: right;
 }
 
+.track-footnote {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(0, 255, 65, 0.15);
+}
+
+.track-footnote p {
+  font-size: 0.7rem;
+  opacity: 0.7;
+  line-height: 1.4;
+}
+
+.track-footnote p+p {
+  margin-top: 0.25rem;
+}
+
 @media (max-width: 1000px) {
   .work-hero-footer {
     display: none;
