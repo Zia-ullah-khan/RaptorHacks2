@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Info — RaptorHacks 2026</title>
+  <meta name="author" content="RaptorHacks" />
+  <meta name="description" content="RaptorHacks 2026 — Event details, schedule, rules, and organizers." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <link rel="icon" type="image/png" href="/site-icon.png" />
+
+  <link rel="stylesheet" href="/globals.css" />
+  <link rel="stylesheet" href="/css/nav.css" />
+  <link rel="stylesheet" href="/css/menu.css" />
+  <link rel="stylesheet" href="/css/lab.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+  <div class="transition-grid">
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+  </div>
+
+  <script>
+    if (sessionStorage.getItem("pageTransition") === "true") {
+      const grid = document.querySelector(".transition-grid");
+      if (grid) {
+        grid.style.backgroundColor = "var(--bg)";
+        grid.style.zIndex = "1000";
+        grid.style.pointerEvents = "auto";
+      }
+      const blocks = grid.querySelectorAll(".transition-block");
+      blocks.forEach((block) => {
+        block.style.opacity = "1";
+      });
+    }
+  </script>
+
+  <nav>
+    <div class="container">
+      <div class="nav-clock">
+        <p class="type-mono">18 <span>:</span> 25 EST</p>
+      </div>
+
+      <div class="nav-logo">
+        <a href="/" class="type-mono" style="font-size: 0.85rem; letter-spacing: 0.05rem; transform: translateY(0);">
+          RH
+        </a>
+      </div>
+
+      <div class="nav-location">
+        <p class="type-mono">
+          <ion-icon name="triangle-sharp"></ion-icon> Germantown, MD
+        </p>
+      </div>
+    </div>
+  </nav>
+
+  <div class="menu-toggle-btn">
+    <div class="hamburger-bar"></div>
+    <div class="hamburger-bar"></div>
+  </div>
+
+  <div class="menu-overlay">
+    <div class="menu-bg">
+      <canvas id="menu-canvas"></canvas>
+    </div>
+
+    <div class="menu-overlay-nav">
+      <div class="close-btn">
+        <div class="close-btn-bar"></div>
+        <div class="close-btn-bar"></div>
+      </div>
+
+      <div class="menu-overlay-items">
+        <a class="type-mono" href="https://discord.gg/raptorhacks" target="_blank" rel="noopener noreferrer">Discord</a>
+        <a class="type-mono" href="https://forms.office.com/r/bFr4TExLqV" target="_blank"
+          rel="noopener noreferrer">Register</a>
+      </div>
+    </div>
+
+    <div class="menu-overlay-footer">
+      <a class="type-mono" href="/work">Tracks</a>
+      <a class="type-mono" href="/contact">Contact</a>
+    </div>
+
+    <div class="circular-menu">
+      <div class="joystick">
+        <ion-icon name="grid-sharp" class="center-icon center-main"></ion-icon>
+        <ion-icon name="chevron-up-sharp" class="center-icon center-up"></ion-icon>
+        <ion-icon name="chevron-down-sharp" class="center-icon center-down"></ion-icon>
+        <ion-icon name="chevron-back-sharp" class="center-icon center-left"></ion-icon>
+        <ion-icon name="chevron-forward-sharp" class="center-icon center-right"></ion-icon>
+      </div>
+    </div>
+  </div>
+
+  <canvas id="particle-canvas"></canvas>
+
+  <section class="lab-hero">
+    <div class="container">
+      <h1 data-animate-variant="diffuse" data-animate-on-scroll="false" data-animate-delay="0.1">
+        Event Info
+      </h1>
+      <p data-animate-variant="slide" data-animate-type="words" data-animate-on-scroll="false"
+        data-animate-delay="0.75">
+        MC Hackathon 2026
+      </p>
+    </div>
+    <div class="lab-about-revealer"></div>
+    <div class="lab-hero-overlay"></div>
+  </section>
+
+  <section class="lab-about">
+    <div class="container">
+      <h3 class="type-var-2" data-animate-variant="slide" data-animate-type="lines" data-animate-on-scroll="true">
+        RaptorHacks is Montgomery College's premier hackathon, hosted by the
+        AI Club and Raptor Who Code. Open exclusively to current MC students,
+        teams of 2–4 will build and present innovative projects across 7
+        tracks. The in-person Demo Day takes place April 11, 2026
+        at the Germantown campus. Each team can submit their MVP under up to
+        3 tracks.
+      </h3>
+      <h3 class="type-var-2" data-animate-variant="slide" data-animate-type="lines" data-animate-on-scroll="true">
+        With over $4K in prizes, free lunch, swag bags from igniteHub, and
+        judging by industry professionals, this is your chance to hack,
+        compete, and showcase your skills. The GenAI track features both a
+        virtual submission (MVP + 5-min demo video by March 22) and
+        an in-person component on Demo Day. All teams must be present
+        to be judged, except the AI virtual track.
+      </h3>
+    </div>
+  </section>
+
+  <section class="pie-transition">
+    <div class="pie-transition-outro-header">
+      <h3>Build. Compete. Win.</h3>
+    </div>
+
+    <div class="pie-transition-footer">
+      <div class="container">
+        <p class="type-mono">[ Hack the Planet ]</p>
+        <p class="type-mono">__ April 11, 2026</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stats-header">
+      <div class="stats-header-copy">
+        <h3>At a Glance</h3>
+        <p>
+          Key numbers for RaptorHacks 2026 — Montgomery College's
+          hackathon event.
+        </p>
+      </div>
+    </div>
+
+    <div class="stats-content">
+      <div class="stat-item">
+        <div class="stat-count">
+          <h1>100</h1>
+        </div>
+        <div class="stat-content">
+          <div class="stat-title">
+            <h3>
+              MC students anticipated to participate across all tracks
+            </h3>
+          </div>
+          <div class="stat-info">
+            <p class="type-mono">Anticipated Participation</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-count">
+          <h1>7</h1>
+        </div>
+        <div class="stat-content">
+          <div class="stat-title">
+            <h3>Hackathon tracks spanning AI, Cyber, UI/UX, and more</h3>
+          </div>
+          <div class="stat-info">
+            <p class="type-mono">Competition Tracks</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-count">
+          <h1>$4K+</h1>
+        </div>
+        <div class="stat-content">
+          <div class="stat-title">
+            <h3>Total prize pool across all winning categories</h3>
+          </div>
+          <div class="stat-info">
+            <p class="type-mono">Prize Value</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-count">
+          <h1>32</h1>
+        </div>
+        <div class="stat-content">
+          <div class="stat-title">
+            <h3>Individual prizes for winning team members</h3>
+          </div>
+          <div class="stat-info">
+            <p class="type-mono">Individual Prizes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="clients">
+    <div class="container">
+      <div class="clients-header">
+        <h2>Organizers</h2>
+      </div>
+      <div class="clients-list"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h2>RaptorHacks</h2>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-sub-col">
+              <a href="/">
+                <h3>Home</h3>
+              </a>
+              <a href="/lab">
+                <h3>Event Info</h3>
+              </a>
+              <a href="/work">
+                <h3>Tracks</h3>
+              </a>
+              <a href="/contact">
+                <h3>Register</h3>
+              </a>
+            </div>
+
+            <div class="footer-sub-col">
+              <a href="https://discord.gg/raptorhacks" target="_blank" rel="noopener noreferrer">Discord</a>
+              <a href="https://forms.office.com/r/bFr4TExLqV" target="_blank" rel="noopener noreferrer">Register</a>
+              <a href="https://www.raptorhacks.com/" target="_blank" rel="noopener noreferrer">Website</a>
+              <a href="mailto:sponsor@raptorhacks.com">Sponsor</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-row">
+          <p class="type-mono">MC Hackathon __ April '26</p>
+          <p class="type-mono">[ AI Club + Raptor Who Code ]</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <svg viewBox="0 0 0 0" aria-hidden="true" style="position: absolute; width: 0; height: 0; pointer-events: none">
+    <defs>
+      <filter id="blur-matrix" x="-50%" y="-50%" width="200%" height="200%">
+        <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 255 -140">
+        </feColorMatrix>
+      </filter>
+    </defs>
+  </svg>
+
+  <script type="module" src="/js/lenis-scroll.js"></script>
+  <script type="module" src="/js/transition.js"></script>
+  <script type="module" src="/js/nav.js"></script>
+  <script type="module" src="/js/menu.js"></script>
+  <script type="module" src="/js/animated-copy.js"></script>
+  <script type="module" src="/js/lab.js"></script>
+  <script type="module" src="/js/particle-visual.js"></script>
+  <script type="module" src="/js/pie-transition.js"></script>
+  <script type="module" src="/js/stats.js"></script>
+  <script type="module" src="/js/clients.js"></script>
+  <script type="module" src="/js/footer.js"></script>
+</body>
+
+</html>

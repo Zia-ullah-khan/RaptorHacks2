@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tracks — RaptorHacks 2026</title>
+  <meta name="author" content="RaptorHacks" />
+  <meta name="description" content="RaptorHacks 2026 — 7 Hackathon Tracks with $4K+ in prizes." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <link rel="icon" type="image/png" href="/site-icon.png" />
+
+  <link rel="stylesheet" href="/globals.css" />
+  <link rel="stylesheet" href="/css/nav.css" />
+  <link rel="stylesheet" href="/css/menu.css" />
+  <link rel="stylesheet" href="/css/work.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+  <div class="transition-grid">
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+  </div>
+
+  <script>
+    if (sessionStorage.getItem("pageTransition") === "true") {
+      const grid = document.querySelector(".transition-grid");
+      if (grid) {
+        grid.style.backgroundColor = "var(--bg)";
+        grid.style.zIndex = "1000";
+        grid.style.pointerEvents = "auto";
+      }
+      const blocks = grid.querySelectorAll(".transition-block");
+      blocks.forEach((block) => {
+        block.style.opacity = "1";
+      });
+    }
+  </script>
+
+  <nav>
+    <div class="container">
+      <div class="nav-clock">
+        <p class="type-mono">18 <span>:</span> 25 EST</p>
+      </div>
+
+      <div class="nav-logo">
+        <a href="/" class="type-mono" style="font-size: 0.85rem; letter-spacing: 0.05rem; transform: translateY(0);">
+          RH
+        </a>
+      </div>
+
+      <div class="nav-location">
+        <p class="type-mono">
+          <ion-icon name="triangle-sharp"></ion-icon> Germantown, MD
+        </p>
+      </div>
+    </div>
+  </nav>
+
+  <div class="menu-toggle-btn">
+    <div class="hamburger-bar"></div>
+    <div class="hamburger-bar"></div>
+  </div>
+
+  <div class="menu-overlay">
+    <div class="menu-bg">
+      <canvas id="menu-canvas"></canvas>
+    </div>
+
+    <div class="menu-overlay-nav">
+      <div class="close-btn">
+        <div class="close-btn-bar"></div>
+        <div class="close-btn-bar"></div>
+      </div>
+
+      <div class="menu-overlay-items">
+        <a class="type-mono" href="https://discord.gg/raptorhacks" target="_blank" rel="noopener noreferrer">Discord</a>
+        <a class="type-mono" href="https://forms.office.com/r/bFr4TExLqV" target="_blank"
+          rel="noopener noreferrer">Register</a>
+      </div>
+    </div>
+
+    <div class="menu-overlay-footer">
+      <a class="type-mono" href="/lab">Event Info</a>
+      <a class="type-mono" href="/contact">Contact</a>
+    </div>
+
+    <div class="circular-menu">
+      <div class="joystick">
+        <ion-icon name="grid-sharp" class="center-icon center-main"></ion-icon>
+        <ion-icon name="chevron-up-sharp" class="center-icon center-up"></ion-icon>
+        <ion-icon name="chevron-down-sharp" class="center-icon center-down"></ion-icon>
+        <ion-icon name="chevron-back-sharp" class="center-icon center-left"></ion-icon>
+        <ion-icon name="chevron-forward-sharp" class="center-icon center-right"></ion-icon>
+      </div>
+    </div>
+  </div>
+
+  <section class="work-hero">
+    <h1 data-animate-variant="diffuse" data-animate-on-scroll="false" data-animate-delay="0.1">
+      Tracks
+    </h1>
+
+    <div class="work-hero-footer">
+      <div class="container">
+        <p class="type-mono" data-animate-variant="flicker" data-animate-on-scroll="false" data-animate-delay="1">
+          [ 7 Categories ]
+        </p>
+        <p class="type-mono" data-animate-variant="flicker" data-animate-on-scroll="false" data-animate-delay="1">
+          / $4K+ in Prizes
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work-items">
+    <div class="container">
+      <div class="work-item-row" id="work-item-row-1">
+        <div class="work-item track-card">
+          <div class="track-header">
+            <h3>Cybersecurity</h3>
+            <p class="type-mono">Track 01</p>
+          </div>
+          <div class="work-item-info">
+            <p>Best secured app / smallest attack surface</p>
+            <p>Yubikey 5C NFC — $260</p>
+          </div>
+          <p class="type-mono" style="margin-top: 0.5rem; opacity: 0.5;">Sponsor: GT Cyber</p>
+        </div>
+      </div>
+
+      <div class="work-item-row" id="work-item-row-2">
+        <div class="work-item track-card">
+          <div class="track-header">
+            <h3>Machine Learning</h3>
+            <p class="type-mono">Track 02</p>
+          </div>
+          <div class="work-item-info">
+            <p>Best model built (accuracy, fine tuning)</p>
+            <p>Crucial X9 2TB SSD — $690</p>
+          </div>
+          <p class="type-mono" style="margin-top: 0.5rem; opacity: 0.5;">Sponsor: TBD</p>
+        </div>
+      </div>
+
+      <div class="work-item-row" id="work-item-row-3">
+        <div class="work-item track-card">
+          <div class="track-header">
+            <h3>GenAI ⭐</h3>
+            <p class="type-mono">Track 03</p>
+          </div>
+          <div class="work-item-info">
+            <p>Best use of generative AI</p>
+            <p>Claude Pro 6 months — $480</p>
+          </div>
+          <p class="type-mono" style="margin-top: 0.5rem; opacity: 0.5;">Sponsor: AI Club / DLC</p>
+        </div>
+      </div>
+
+      <div class="work-item-row" id="work-item-row-4">
+        <div class="work-item track-card">
+          <div class="track-header">
+            <h3>UI/UX</h3>
+            <p class="type-mono">Track 04</p>
+          </div>
+          <div class="work-item-info">
+            <p>Best app design</p>
+            <p>Custom Keyboard — $700</p>
+          </div>
+          <p class="type-mono" style="margin-top: 0.5rem; opacity: 0.5;">Sponsor: Figma (TBD)</p>
+        </div>
+      </div>
+
+      <div class="work-item-row" id="work-item-row-5">
+        <div class="work-item track-card">
+          <div class="track-header">
+            <h3>Green Track</h3>
+            <p class="type-mono">Track 05</p>
+          </div>
+          <div class="work-item-info">
+            <p>Best app for sustainability &amp; conservation</p>
+            <p>Patagonia Refugio Daypack — $460</p>
+          </div>
+          <p class="type-mono" style="margin-top: 0.5rem; opacity: 0.5;">Sponsor: National Wildlife Federation (TBD)</p>
+        </div>
+      </div>
+
+      <div class="work-item-row" id="work-item-row-6">
+        <div class="work-item track-card">
+          <div class="track-header">
+            <h3>Challenge Track</h3>
+            <p class="type-mono">Track 06</p>
+          </div>
+          <div class="work-item-info">
+            <p>Best use of Vercel + Supabase stack</p>
+            <p>NVIDIA Jetson Orin Nano — $1,000</p>
+          </div>
+          <p class="type-mono" style="margin-top: 0.5rem; opacity: 0.5;">Sponsor: Vercel + Supabase</p>
+        </div>
+      </div>
+
+      <div class="work-item-row" id="work-item-row-7">
+        <div class="work-item track-card">
+          <div class="track-header">
+            <h3>Best in Show</h3>
+            <p class="type-mono">Track 07</p>
+          </div>
+          <div class="work-item-info">
+            <p>Best overall excellence</p>
+            <p>Sony ULT WEAR Headphones — $592</p>
+          </div>
+          <p class="type-mono" style="margin-top: 0.5rem; opacity: 0.5;">Sponsor: TBD</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h2>RaptorHacks</h2>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-sub-col">
+              <a href="/">
+                <h3>Home</h3>
+              </a>
+              <a href="/lab">
+                <h3>Event Info</h3>
+              </a>
+              <a href="/work">
+                <h3>Tracks</h3>
+              </a>
+              <a href="/contact">
+                <h3>Register</h3>
+              </a>
+            </div>
+
+            <div class="footer-sub-col">
+              <a href="https://discord.gg/raptorhacks" target="_blank" rel="noopener noreferrer">Discord</a>
+              <a href="https://forms.office.com/r/bFr4TExLqV" target="_blank" rel="noopener noreferrer">Register</a>
+              <a href="https://www.raptorhacks.com/" target="_blank" rel="noopener noreferrer">Website</a>
+              <a href="mailto:sponsor@raptorhacks.com">Sponsor</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-row">
+          <p class="type-mono">MC Hackathon __ April '26</p>
+          <p class="type-mono">[ Organized by AI Club + Raptor Who Code ]</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <svg viewBox="0 0 0 0" aria-hidden="true" style="position: absolute; width: 0; height: 0; pointer-events: none">
+    <defs>
+      <filter id="blur-matrix" x="-50%" y="-50%" width="200%" height="200%">
+        <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 255 -140">
+        </feColorMatrix>
+      </filter>
+    </defs>
+  </svg>
+
+  <script type="module" src="/js/lenis-scroll.js"></script>
+  <script type="module" src="/js/transition.js"></script>
+  <script type="module" src="/js/nav.js"></script>
+  <script type="module" src="/js/menu.js"></script>
+  <script type="module" src="/js/animated-copy.js"></script>
+  <script type="module" src="/js/work.js"></script>
+  <script type="module" src="/js/footer.js"></script>
+</body>
+
+</html>
