@@ -5,9 +5,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 // clients list
 const clientsData = [
-  { name: "Zia", project: "AI Club Lead / Sponsorship" },
-  { name: "Michael", project: "Raptor Who Code / Tracks" },
-  { name: "Sahil Kharel", project: "Website / Discord" },
+  { name: "Zia", project: "AI Club Lead / Website / Organizer" },
+  { name: "Michael", project: "Raptor Who Code / Organizer" },
+  { name: "Sahil Kharel", project: "Organizer" },
   { name: "Alla", project: "Faculty Advisor" },
   { name: "Dr. Webb", project: "Faculty Feedback" },
   { name: "Paul Thompson", project: "DLC Newsletter" },
@@ -15,13 +15,13 @@ const clientsData = [
   { name: "Ashique Tanveer", project: "Judge" },
   { name: "Dr. Nestor Tiglao", project: "Judge / UMD Cyber" },
   { name: "igniteHub", project: "Swag Bags" },
-  { name: "ElevenLabs", project: "Sponsor (Pending)" },
-  { name: "Vercel", project: "Challenge Track Sponsor" },
-  { name: "Supabase", project: "Challenge Track Sponsor" },
-  { name: "GT Cyber", project: "Cybersecurity Sponsor" },
-  { name: "AI Club", project: "GenAI Track Sponsor" },
+  //{ name: "ElevenLabs", project: "Sponsor (Pending)" },
+  //{ name: "Vercel", project: "Challenge Track Sponsor" },
+  //{ name: "Supabase", project: "Challenge Track Sponsor" },
+  //{ name: "GT Cyber", project: "Cybersecurity Sponsor" },
+  //{ name: "AI Club", project: "GenAI Track Sponsor" },
   { name: "Digital Learning Center", project: "GenAI Co-Sponsor" },
-  { name: "MLH", project: "Event Membership" },
+  //{ name: "MLH", project: "Event Membership" },
 ];
 
 // initialization
