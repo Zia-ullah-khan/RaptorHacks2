@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="/css/nav.css" />
   <link rel="stylesheet" href="/css/menu.css" />
   <link rel="stylesheet" href="/css/index.css" />
+  <link rel="stylesheet" href="/css/alert-popup.css" />
 
   <script>
     if (sessionStorage.getItem("pageTransition") === "true") {
@@ -27,6 +28,37 @@
 </head>
 
 <body>
+  <!-- Alert Popup -->
+  <div class="alert-popup-overlay" id="alert-popup-overlay">
+    <div class="alert-popup">
+      <div class="alert-popup-titlebar">
+        <div class="alert-popup-titlebar-left">
+          <div class="alert-popup-titlebar-dot"></div>
+          <p>&#9654; System Alert</p>
+        </div>
+        <p>RaptorHacks</p>
+      </div>
+      <div class="alert-popup-body">
+        <h3>Networking &amp; Team Building Event</h3>
+        <div class="alert-details">
+          <div class="alert-detail-row">
+            <ion-icon name="calendar-sharp"></ion-icon>
+            <p>Tomorrow — March 5, 2026</p>
+          </div>
+          <div class="alert-detail-row">
+            <ion-icon name="location-sharp"></ion-icon>
+            <p>Room 312, Humanities Building<br><span class="type-mono">Rockville Campus</span></p>
+          </div>
+          <div class="alert-detail-row">
+            <ion-icon name="people-sharp"></ion-icon>
+            <p>Find teammates, network, and prepare for the hackathon!</p>
+          </div>
+        </div>
+      </div>
+      <button class="alert-popup-close">&#9654; Dismiss</button>
+    </div>
+  </div>
+
   <div class="preloader">
     <div class="preloader-grid">
       <div class="preloader-block"></div>
@@ -192,6 +224,7 @@
   <script type="module" src="/js/menu.js"></script>
   <script type="module" src="/js/animated-copy.js"></script>
   <script type="module" src="/js/skyline.js"></script>
+  <script type="module" src="/js/alert-popup.js"></script>
 </body>
 
 </html>

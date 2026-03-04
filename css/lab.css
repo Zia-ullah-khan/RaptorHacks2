@@ -156,6 +156,122 @@
   gap: 1rem;
 }
 
+/* upcoming events section */
+.upcoming-events {
+  position: relative;
+  width: 100%;
+  background-color: var(--bg);
+  padding: 8rem 0 4rem 0;
+}
+
+.upcoming-events .container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.events-header {
+  text-align: center;
+}
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.event-card {
+  position: relative;
+  border: 1px solid rgba(0, 255, 65, 0.25);
+  background: rgba(0, 255, 65, 0.02);
+  overflow: hidden;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  border-color: rgba(0, 255, 65, 0.5);
+  box-shadow: 0 0 30px rgba(0, 255, 65, 0.08);
+}
+
+.event-card-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--fg);
+  box-shadow: 0 0 10px rgba(0, 255, 65, 0.4);
+}
+
+.event-card-content {
+  padding: 1.75rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.event-card-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.event-badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--fg);
+  box-shadow: 0 0 6px var(--fg);
+  animation: pulse-dot 1.5s ease-in-out infinite;
+}
+
+.event-card-badge .type-mono {
+  opacity: 0.7;
+  font-size: 0.65rem;
+  letter-spacing: 0.1rem;
+}
+
+.event-card-content h3 {
+  line-height: 1;
+  margin-top: 0;
+}
+
+.event-card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.event-card-detail {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.event-card-detail ion-icon {
+  font-size: 0.85rem;
+  color: var(--fg);
+  opacity: 0.7;
+  flex-shrink: 0;
+}
+
+.event-card-detail .type-mono {
+  font-size: 0.72rem;
+  opacity: 0.85;
+}
+
+.event-card-description {
+  font-family: var(--type-2);
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: var(--fg);
+  opacity: 0.75;
+  margin-top: 0.5rem;
+}
+
 /* faq section */
 .faq {
   position: relative;
