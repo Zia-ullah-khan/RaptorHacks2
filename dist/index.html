@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RaptorHacks 2026 | Hack the Planet</title>
+  <meta name="author" content="RaptorHacks" />
+  <meta name="description"
+    content="RaptorHacks 2026 — Montgomery College's Hackathon. March 3 – April 11, 2026. 7 Tracks." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <link rel="icon" type="image/png" href="/site-icon.png" />
+
+
+  <script>
+    if (sessionStorage.getItem("pageTransition") === "true") {
+      document.documentElement.style.overflow = "hidden";
+    }
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  
+  <!-- Vercel Web Analytics -->
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+  <script type="module" crossorigin src="/assets/main-DvM6wJv1.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/animated-copy-DncZ2efD.js">
+  <link rel="stylesheet" crossorigin href="/assets/animated-copy-DIh-h11c.css">
+  <link rel="stylesheet" crossorigin href="/assets/main-eUoARi_j.css">
+</head>
+
+<body>
+  <!-- Alert Popup -->
+  <div class="alert-popup-overlay" id="alert-popup-overlay">
+    <div class="alert-popup">
+      <div class="alert-popup-titlebar">
+        <div class="alert-popup-titlebar-left">
+          <div class="alert-popup-titlebar-dot"></div>
+          <p>&#9654; System Alert</p>
+        </div>
+        <p>RaptorHacks</p>
+      </div>
+      <div class="alert-popup-body">
+        <h3>Team Formation Event</h3>
+        <div class="alert-details">
+          <div class="alert-detail-row">
+            <ion-icon name="calendar-sharp"></ion-icon>
+            <p>Thursday, March 10, 2026 — 7:30 PM ET<br><span class="type-mono">Via Zoom</span></p>
+          </div>
+          <div class="alert-detail-row">
+            <ion-icon name="videocam-sharp"></ion-icon>
+            <p><a href="https://montgomerycollege.zoom.us/j/95664912344" target="_blank" rel="noopener noreferrer" style="color:inherit;">https://montgomerycollege.zoom.us/<br>j/95664912344</a><br><span class="type-mono">Meeting ID: 956 6491 2344</span></p>
+          </div>
+          <div class="alert-detail-row">
+            <ion-icon name="people-sharp"></ion-icon>
+            <p>All looking for a team are invited! Meet new people, find collaborators, maybe do some brainstorming.</p>
+          </div>
+        </div>
+      </div>
+      <button class="alert-popup-close">&#9654; Dismiss</button>
+    </div>
+  </div>
+
+  <div class="preloader">
+    <div class="preloader-grid">
+      <div class="preloader-block"></div>
+      <div class="preloader-block"></div>
+      <div class="preloader-block"></div>
+      <div class="preloader-block"></div>
+      <div class="preloader-block"></div>
+      <div class="preloader-block"></div>
+      <div class="preloader-block"></div>
+      <div class="preloader-block"></div>
+      <div class="preloader-block"></div>
+      <div class="preloader-block"></div>
+      <div class="preloader-block"></div>
+      <div class="preloader-block"></div>
+    </div>
+
+    <div class="progress-bar">
+      <div class="progress-bar-indicator"></div>
+
+      <div class="progress-bar-copy">
+        <p class="type-mono">&#9654; Loading — <span>0%</span></p>
+        <p class="type-mono">RaptorHacks Booting</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="transition-grid">
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+    <div class="transition-block"></div>
+  </div>
+
+  <script>
+    if (sessionStorage.getItem("pageTransition") === "true") {
+      const grid = document.querySelector(".transition-grid");
+      if (grid) {
+        grid.style.backgroundColor = "var(--bg)";
+        grid.style.zIndex = "1000";
+        grid.style.pointerEvents = "auto";
+      }
+      const blocks = grid.querySelectorAll(".transition-block");
+      blocks.forEach((block) => {
+        block.style.opacity = "1";
+      });
+    }
+  </script>
+
+  <nav>
+    <div class="container">
+      <div class="nav-clock">
+        <p class="type-mono">18 <span>:</span> 25 EST</p>
+      </div>
+
+      <div class="nav-logo">
+        <a href="/" class="type-mono" style="font-size: 0.85rem; letter-spacing: 0.05rem; transform: translateY(0);">
+          RH
+        </a>
+      </div>
+
+      <div class="nav-location">
+        <p class="type-mono">
+          <ion-icon name="triangle-sharp"></ion-icon> Germantown, MD
+        </p>
+      </div>
+    </div>
+  </nav>
+
+  <div class="menu-toggle-btn">
+    <div class="hamburger-bar"></div>
+    <div class="hamburger-bar"></div>
+  </div>
+
+  <div class="menu-overlay">
+    <div class="menu-bg">
+      <canvas id="menu-canvas"></canvas>
+    </div>
+
+    <div class="menu-overlay-nav">
+      <div class="close-btn">
+        <div class="close-btn-bar"></div>
+        <div class="close-btn-bar"></div>
+      </div>
+
+      <div class="menu-overlay-items">
+        <a class="type-mono" href="https://discord.gg/uyvQswpbPC" target="_blank" rel="noopener noreferrer">Discord</a>
+        <a class="type-mono" href="https://forms.office.com/r/bFr4TExLqV" target="_blank"
+          rel="noopener noreferrer">Register</a>
+      </div>
+    </div>
+
+    <div class="menu-overlay-footer">
+      <a class="type-mono" href="/work">Tracks</a>
+      <a class="type-mono" href="/contact">Contact</a>
+    </div>
+
+    <div class="circular-menu">
+      <div class="joystick">
+        <ion-icon name="grid-sharp" class="center-icon center-main"></ion-icon>
+        <ion-icon name="chevron-up-sharp" class="center-icon center-up"></ion-icon>
+        <ion-icon name="chevron-down-sharp" class="center-icon center-down"></ion-icon>
+        <ion-icon name="chevron-back-sharp" class="center-icon center-left"></ion-icon>
+        <ion-icon name="chevron-forward-sharp" class="center-icon center-right"></ion-icon>
+      </div>
+    </div>
+  </div>
+
+  <section class="hero">
+    <canvas id="skyline"></canvas>
+
+    <h1 data-animate-variant="diffuse" data-animate-on-scroll="false" data-animate-delay="0.1">
+      RaptorHacks
+    </h1>
+    <p data-animate-variant="slide" data-animate-type="words" data-animate-on-scroll="false" data-animate-delay="0.75">
+      Hack the Planet — March 3 – April 11, 2026
+    </p>
+
+    <div class="hero-status" data-animate-variant="flicker" data-animate-on-scroll="false" data-animate-delay="1.1">
+      <span class="status-dot"></span>
+      <span class="type-mono">Active</span>
+    </div>
+
+    <div class="hero-cta" data-animate-variant="flicker" data-animate-on-scroll="false" data-animate-delay="1.3">
+      <a href="https://forms.office.com/r/bFr4TExLqV" target="_blank" rel="noopener noreferrer"
+        class="btn btn-primary">Register</a>
+      <a href="https://discord.gg/uyvQswpbPC" target="_blank" rel="noopener noreferrer"
+        class="btn btn-outline">Discord</a>
+    </div>
+
+    <div class="hero-footer">
+      <div class="container">
+        <p class="type-mono" data-animate-variant="flicker" data-animate-on-scroll="false" data-animate-delay="1">
+          MC Hackathon 2026
+        </p>
+        <p class="type-mono" data-animate-variant="flicker" data-animate-on-scroll="false" data-animate-delay="1">
+          100 Students · 7 Tracks
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <svg viewBox="0 0 0 0" aria-hidden="true" style="position: absolute; width: 0; height: 0; pointer-events: none">
+    <defs>
+      <filter id="blur-matrix" x="-50%" y="-50%" width="200%" height="200%">
+        <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 255 -140">
+        </feColorMatrix>
+      </filter>
+    </defs>
+  </svg>
+
+</body>
+
+</html>
